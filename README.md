@@ -24,6 +24,8 @@ npm run build    # fails if a link points to a page that doesn't exist
 npm run preview  # shows the built site at http://localhost:4173/help/
 ```
 
+The build also writes files for AI tools: `llms.txt` (an index of every page), `llms-full.txt` (every page in one file) and a Markdown copy of each page, for example `/help/devices/connect-computer.md`.
+
 ## Folders
 
 | Path | What it is |
@@ -32,6 +34,9 @@ npm run preview  # shows the built site at http://localhost:4173/help/
 | `docs/<category>/index.md` | Category page, one per sidebar section (except Getting started) |
 | `docs/<category>/<article>.md` | Articles |
 | `docs/public/` | Logos, favicons and images (`docs/public/images/<category>/`) |
-| `docs/.vitepress/config.mts` | Site settings, navigation and sidebar sections |
+| `docs/.vitepress/config.mts` | Site settings, navigation, page meta tags |
+| `docs/.vitepress/content.mts` | Sidebar sections, and how articles are read and listed |
+| `docs/.vitepress/llms.mts` | Writes `llms.txt`, `llms-full.txt` and the Markdown copies |
+| `docs/.vitepress/theme/` | Theme: colors, article lists, related articles |
 | `docs/.vitepress/theme/custom.css` | Brand colors |
 | `templates/article.md` | Copy this to start a new article |

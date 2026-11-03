@@ -1,7 +1,7 @@
 ---
 title: "How does Desktop Commander compare to other tools?"
 sidebarTitle: "Compare to other tools"
-description: "Desktop Commander compared with copy and paste, coding agents like Codex and Claude Code, ChatGPT Work, remote desktop and SSH, self hosted agents like OpenClaw, and other MCP servers."
+description: "Desktop Commander compared with copy and paste, coding agents like Codex, remote desktop and SSH, self hosted agents like OpenClaw, and other MCP servers."
 order: 3
 related:
   - /getting-started/what-is-desktop-commander

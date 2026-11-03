@@ -1,7 +1,7 @@
 ---
 title: "Why was my tool call blocked by OpenAI's safety checks?"
 sidebarTitle: "Blocked by safety checks"
-description: "For Desktop Commander Remote in ChatGPT: ChatGPT sometimes blocks legitimate tool calls before they reach your computer. What you can try, and how to help us report it."
+description: "For Desktop Commander Remote in ChatGPT: ChatGPT sometimes blocks legitimate tool calls before they reach your computer. What to try and how to report it."
 order: 4
 related:
   - /troubleshooting/chatgpt-doesnt-use-desktop-commander

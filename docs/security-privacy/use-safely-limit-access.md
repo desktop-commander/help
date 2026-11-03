@@ -1,7 +1,7 @@
 ---
 title: "How do I use Desktop Commander safely and limit its access?"
 sidebarTitle: "Safety and access limits"
-description: "Limit Desktop Commander to certain folders, block commands, control your computers and follow a few simple habits. Works for Desktop Commander Remote and Desktop Commander (local MCP)."
+description: "Limit Desktop Commander to certain folders, block commands, control your computers and follow a few simple habits. For Remote and local MCP."
 order: 2
 related:
   - /security-privacy/data-privacy

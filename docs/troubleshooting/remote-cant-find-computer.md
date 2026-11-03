@@ -1,6 +1,6 @@
 ---
 title: "Why can't Desktop Commander Remote find my computer?"
-sidebarTitle: "Computer offline or not found"
+sidebarTitle: "Computer offline or missing"
 description: "For Desktop Commander Remote: your computer shows as offline, isn't listed, or the AI says no device is online. Here is how to find out why and fix it."
 order: 1
 related:
