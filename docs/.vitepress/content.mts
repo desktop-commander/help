@@ -7,6 +7,10 @@ import type { DefaultTheme } from 'vitepress'
 
 export const SITE = 'https://desktopcommander.app'
 export const BASE = '/help/'
+// Where the help center is served. The test copy on GitHub Pages sets
+// HELP_ORIGIN=https://desktop-commander.github.io so its links point to itself.
+export const HELP_ORIGIN = process.env.HELP_ORIGIN || SITE
+export const IS_TEST_COPY = HELP_ORIGIN !== SITE
 export const SITE_TITLE = 'Desktop Commander Help'
 export const SITE_DESCRIPTION =
   'Help center for Desktop Commander, Remote MCP and the local MCP server: setup, devices, billing, security and troubleshooting.'
@@ -118,7 +122,7 @@ export function buildPageTitles(): Record<string, string> {
 
 // '/devices/connect-computer' -> 'https://desktopcommander.app/help/devices/connect-computer'
 export function pageUrl(link: string): string {
-  return `${SITE}${BASE}${link.replace(/^\//, '')}`
+  return `${HELP_ORIGIN}${BASE}${link.replace(/^\//, '')}`
 }
 
 // '/devices/connect-computer' -> 'devices/connect-computer.md', '/devices/' -> 'devices/index.md'

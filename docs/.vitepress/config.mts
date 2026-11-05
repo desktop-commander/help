@@ -2,6 +2,8 @@ import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
 import {
   BASE,
+  HELP_ORIGIN,
+  IS_TEST_COPY,
   SITE,
   SITE_DESCRIPTION,
   SITE_TITLE,
@@ -27,7 +29,7 @@ export default defineConfig({
   appearance: false, // light theme only
   srcExclude: ['**/README.md'],
 
-  sitemap: { hostname: `${SITE}${BASE}` },
+  sitemap: { hostname: `${HELP_ORIGIN}${BASE}` },
 
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: `${BASE}favicon-32x32.png` }],
@@ -40,6 +42,8 @@ export default defineConfig({
     ['meta', { property: 'og:image:alt', content: 'Desktop Commander Help' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: SHARE_IMAGE }],
+    // Keep test copies out of search engines
+    ...(IS_TEST_COPY ? [['meta', { name: 'robots', content: 'noindex, nofollow' }] as const] : []),
   ],
 
   // Per page: the desktopcommander.app/help address, the Markdown copy for AI
