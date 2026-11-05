@@ -5,7 +5,7 @@ description: "How data moves with Desktop Commander Remote and Desktop Commander
 order: 1
 related:
   - /security-privacy/use-safely-limit-access
-  - /getting-started/compare-to-other-tools
+  - /account-billing/delete-account
 ---
 
 # Is my data private? What Desktop Commander sends and stores

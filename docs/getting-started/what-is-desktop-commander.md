@@ -77,6 +77,18 @@ curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/ma
 
 If Node.js is missing, setup asks whether to install it. Type Yes or press Enter. You can [view the setup scripts on GitHub](https://github.com/wonderwhy-er/DesktopCommanderMCP/tree/main/scripts/remote) before you run them.
 
+**npx (advanced).** If you already have Node.js 22.12 or newer, you can start Desktop Commander Remote with npx instead. On Windows, paste this in PowerShell:
+
+```powershell
+npx.cmd @wonderwhy-er/desktop-commander@latest remote
+```
+
+On a Mac or Linux, paste this in your terminal:
+
+```bash
+npx @wonderwhy-er/desktop-commander@latest remote
+```
+
 ### 4. Verify your device
 
 A page opens in your browser. Check that the code on the page matches the code in your terminal, then click **Verify device**. Keep the terminal window open.

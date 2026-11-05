@@ -5,6 +5,7 @@ description: "Your AI app or computer is probably connected to a different Deskt
 order: 2
 related:
   - /account-billing/plans-and-tool-call-limits
+  - /account-billing/change-email-move-pro
   - /troubleshooting/remote-cant-find-computer
 ---
 

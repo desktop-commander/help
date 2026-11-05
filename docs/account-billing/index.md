@@ -1,10 +1,10 @@
 ---
 title: Account and billing
-description: Desktop Commander plans, tool call limits, upgrades, invoices, refunds and cancelling.
+description: Desktop Commander plans and tool call limits, renewals and refunds, invoices and payments, account changes and deletion, and regional availability.
 ---
 
 # Account and billing
 
-Desktop Commander plans, tool call limits, upgrades, invoices, refunds and cancelling.
+Desktop Commander plans and tool call limits, renewals and refunds, invoices and payments, account changes and deletion, and regional availability.
 
 <ArticleList />

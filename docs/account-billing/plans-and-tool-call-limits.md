@@ -5,7 +5,8 @@ description: "Desktop Commander Remote Free and Pro plans, what counts as a tool
 order: 1
 related:
   - /troubleshooting/usage-limit-after-upgrading
-  - /support/
+  - /account-billing/renewals-cancellations-refunds
+  - /account-billing/invoices-receipts-taxes-payments
 ---
 
 # How do the Free and Pro plans and tool call limits work?

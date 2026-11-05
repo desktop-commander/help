@@ -6,6 +6,7 @@ order: 1
 related:
   - /devices/connect-computer
   - /troubleshooting/usage-limit-after-upgrading
+  - /account-billing/multiple-ai-accounts
 ---
 
 # Why can't Desktop Commander Remote find my computer?
