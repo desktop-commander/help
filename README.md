@@ -26,6 +26,24 @@ npm run preview  # shows the built site at http://localhost:4173/help/
 
 The build also writes files for AI tools: `llms.txt` (an index of every page), `llms-full.txt` (every page in one file) and a Markdown copy of each page, for example `/help/devices/connect-computer.md`.
 
+## Analytics
+
+The built site uses Google Analytics, with the same property and cookie banner (Cookiebot) as desktopcommander.app. Google Analytics only loads after a visitor accepts statistics cookies. `npm run dev` and the GitHub Pages test copy have no analytics.
+
+Google Analytics records page views, outbound link clicks and scrolling itself. `docs/.vitepress/theme/analytics.ts` adds these events:
+
+| Event | When | Parameters |
+| --- | --- | --- |
+| `search` | A search the visitor paused on | `search_term` |
+| `search_no_results` | The same, when nothing was found | `search_term` |
+| `search_result_click` | A search result was opened | `search_term`, `link_url` |
+| `related_article_click` | A link under "Related articles" | `link_url`, `link_text` |
+| `copy_code` | A code block was copied | `code_language`, `code_snippet` |
+| `file_download` | A setup script was downloaded, like the Windows `.cmd` | `file_name`, `file_extension`, `link_url` |
+| `page_not_found` | A visitor landed on a page that doesn't exist | |
+
+To see the events in the browser console on any copy of the site, run `localStorage.setItem('analytics-debug', '1')` in the console and reload. The `form_start` events on the search box come from Google Analytics' own form tracking and can be ignored.
+
 ## Folders
 
 | Path | What it is |
@@ -39,4 +57,5 @@ The build also writes files for AI tools: `llms.txt` (an index of every page), `
 | `docs/.vitepress/llms.mts` | Writes `llms.txt`, `llms-full.txt` and the Markdown copies |
 | `docs/.vitepress/theme/` | Theme: colors, article lists, related articles |
 | `docs/.vitepress/theme/custom.css` | Brand colors |
+| `docs/.vitepress/theme/analytics.ts` | Analytics events (see Analytics) |
 | `templates/article.md` | Copy this to start a new article |

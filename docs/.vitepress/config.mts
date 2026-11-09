@@ -18,6 +18,21 @@ import { writeLlmsFiles } from './llms.mts'
 // Image shown when a page is shared in Slack, LinkedIn, ChatGPT and so on (1200 x 630)
 const SHARE_IMAGE = pageUrl('/og-image.png')
 
+// Google Analytics, with the same property and cookie banner (Cookiebot) as
+// desktopcommander.app. Google Analytics only loads after the visitor accepts
+// statistics cookies. Help center events are in theme/analytics.ts.
+const GA_ID = 'G-HXL4Y3Y62N'
+const COOKIEBOT_ID = '83cceb09-32d2-409b-ada6-17cc28478ba6'
+const ANALYTICS_HTML = `
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="${COOKIEBOT_ID}" data-blockingmode="auto" type="text/javascript" async></script>
+    <script type="text/plain" data-cookieconsent="statistics" async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+    <script type="text/plain" data-cookieconsent="statistics">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${GA_ID}');
+    </script>`
+
 export default defineConfig({
   lang: 'en-US',
   title: SITE_TITLE,
@@ -65,6 +80,14 @@ export default defineConfig({
       ['meta', { name: 'twitter:title', content: title }],
       ['meta', { name: 'twitter:description', content: description }],
     )
+  },
+
+  // Cookie banner and Google Analytics, first thing in <head> of every built
+  // page. Added here rather than in `head` so page changes don't touch them.
+  // Only runs in npm run build, and not for the test copy.
+  transformHtml(html) {
+    if (IS_TEST_COPY) return html
+    return html.replace('<meta charset="utf-8">', (tag) => tag + ANALYTICS_HTML)
   },
 
   // llms.txt, llms-full.txt and a Markdown copy of every page
