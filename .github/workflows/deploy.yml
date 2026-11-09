@@ -1,10 +1,9 @@
-# Builds the help center and publishes a test copy to GitHub Pages:
-# https://desktop-commander.github.io/help/
+# Builds the help center and publishes it to GitHub Pages
+# (https://desktop-commander.github.io/help/). Cloudflare serves it at
+# https://desktopcommander.app/help/, so the build uses that address for
+# links, previews and the sitemap, and includes analytics.
 # Runs on every push to main, or by hand from the Actions tab.
-# The test copy is hidden from search engines and has no analytics (see
-# HELP_ORIGIN in content.mts). When this build is served at
-# desktopcommander.app/help, remove HELP_ORIGIN below.
-name: Deploy test site
+name: Deploy help center
 
 on:
   push:
@@ -34,8 +33,6 @@ jobs:
       - uses: actions/configure-pages@v6
       - run: npm ci
       - run: npm run build
-        env:
-          HELP_ORIGIN: https://desktop-commander.github.io
       - uses: actions/upload-pages-artifact@v5
         with:
           path: docs/.vitepress/dist

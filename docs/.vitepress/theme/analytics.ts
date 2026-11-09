@@ -15,7 +15,8 @@
 //   page_not_found       a visitor landed on a page that doesn't exist
 //
 // Nothing is sent before the visitor accepts statistics cookies, and nothing
-// is sent from npm run dev or the GitHub Pages test copy.
+// is sent from npm run dev or from desktop-commander.github.io, where the
+// cookie banner doesn't work.
 // To see the events in the browser console on any copy of the site, run
 //   localStorage.setItem('analytics-debug', '1')
 // in the console and reload.

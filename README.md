@@ -28,7 +28,7 @@ The build also writes files for AI tools: `llms.txt` (an index of every page), `
 
 ## Analytics
 
-The built site uses Google Analytics, with the same property and cookie banner (Cookiebot) as desktopcommander.app. Google Analytics only loads after a visitor accepts statistics cookies. `npm run dev` and the GitHub Pages test copy have no analytics.
+The built site uses Google Analytics, with the same property and cookie banner (Cookiebot) as desktopcommander.app. Google Analytics only loads after a visitor accepts statistics cookies. `npm run dev` has no analytics, and the cookie banner only works on desktopcommander.app, so the copy at desktop-commander.github.io sends nothing either.
 
 Google Analytics records page views, outbound link clicks and scrolling itself. `docs/.vitepress/theme/analytics.ts` adds these events:
 

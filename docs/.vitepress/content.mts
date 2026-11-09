@@ -7,8 +7,9 @@ import type { DefaultTheme } from 'vitepress'
 
 export const SITE = 'https://desktopcommander.app'
 export const BASE = '/help/'
-// Where the help center is served. The test copy on GitHub Pages sets
-// HELP_ORIGIN=https://desktop-commander.github.io so its links point to itself.
+// Where the help center is served. A separate test copy can set HELP_ORIGIN
+// to its own address (like https://desktop-commander.github.io): its links
+// then point to itself, and it is hidden from search engines and has no analytics.
 export const HELP_ORIGIN = process.env.HELP_ORIGIN || SITE
 export const IS_TEST_COPY = HELP_ORIGIN !== SITE
 export const SITE_TITLE = 'Desktop Commander Help'

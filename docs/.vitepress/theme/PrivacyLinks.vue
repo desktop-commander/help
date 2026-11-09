@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // "Privacy" and "Cookie settings" at the bottom of the sidebar. The cookie
 // settings link only shows when the cookie banner is on the page, which is the
-// built site on desktopcommander.app (not npm run dev or the test copy).
+// built site on desktopcommander.app (not npm run dev or desktop-commander.github.io).
 import { onMounted, ref } from 'vue'
 
 type Cookiebot = { renew?: () => void }

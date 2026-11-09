@@ -84,7 +84,7 @@ export default defineConfig({
 
   // Cookie banner and Google Analytics, first thing in <head> of every built
   // page. Added here rather than in `head` so page changes don't touch them.
-  // Only runs in npm run build, and not for the test copy.
+  // Only runs in npm run build, and not for a test copy (see HELP_ORIGIN).
   transformHtml(html) {
     if (IS_TEST_COPY) return html
     return html.replace('<meta charset="utf-8">', (tag) => tag + ANALYTICS_HTML)
