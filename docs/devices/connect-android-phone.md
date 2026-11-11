@@ -1,7 +1,7 @@
 ---
 title: "How do I connect an Android phone to Desktop Commander Remote?"
 sidebarTitle: "Connect an Android phone"
-description: "Experimental: run Desktop Commander Remote on an Android phone with Termux, a free terminal app from Google Play. Setup takes a few minutes."
+description: "Experimental: run Desktop Commander Remote on an Android phone with Termux, a free app that adds a command line to Android. Setup takes a few minutes."
 order: 2
 related:
   - /devices/connect-computer
@@ -15,14 +15,14 @@ related:
 Desktop Commander doesn't officially support Android. We've tested these steps, but we can't promise everything will work smoothly on every phone.
 :::
 
-There's no Android app for Desktop Commander, but you can run Desktop Commander Remote on an Android phone or tablet with Termux, a free, open source terminal app. Setup takes a few minutes. The phone then works as a device of its own, so the AI can use it even when your computers are off.
+There's no Android app for Desktop Commander, but you can run Desktop Commander Remote on an Android phone or tablet with Termux. Termux is a free, open source app that adds a Linux command line to Android, so Desktop Commander can run on your phone the same way it runs in a terminal on a computer. Setup takes a few minutes. The phone then works as a device of its own, so the AI can use it even when your computers are off.
 
 This article is for Desktop Commander Remote, which you use from ChatGPT, Claude or another AI app.
 
 ## Before you start
 
 - Desktop Commander Remote is added to your AI app. See [What is Desktop Commander and how do I install it?](/getting-started/what-is-desktop-commander)
-- An Android phone or tablet with Android 11 or newer
+- An Android phone or tablet with Android 11 or newer, or Android 7 or newer if you install Termux from F-Droid
 
 ## What the AI can do on your phone
 
@@ -37,6 +37,9 @@ It can't change Android settings, manage your installed apps or read other apps'
 ## Set up Termux
 
 1. Install Termux from [Google Play](https://play.google.com/store/apps/details?id=com.termux).
+
+   Or install it from [F-Droid](https://f-droid.org/packages/com.termux/), which usually has more stable and up to date builds. Use only one of the two.
+
 2. Open Termux and update its packages:
 
    ```bash
