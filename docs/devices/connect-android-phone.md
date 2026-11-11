@@ -1,7 +1,7 @@
 ---
 title: "How do I connect an Android phone to Desktop Commander Remote?"
 sidebarTitle: "Connect an Android phone"
-description: "There's no Android app, but you can run Desktop Commander Remote on an Android phone with Termux, a free terminal app. Setup takes a few minutes."
+description: "Experimental: run Desktop Commander Remote on an Android phone with Termux, a free terminal app from Google Play. Setup takes a few minutes."
 order: 2
 related:
   - /devices/connect-computer
@@ -11,6 +11,10 @@ related:
 
 # How do I connect an Android phone to Desktop Commander Remote?
 
+::: warning Experimental
+Desktop Commander doesn't officially support Android. We've tested these steps, but we can't promise everything will work smoothly on every phone.
+:::
+
 There's no Android app for Desktop Commander, but you can run Desktop Commander Remote on an Android phone or tablet with Termux, a free, open source terminal app. Setup takes a few minutes. The phone then works as a device of its own, so the AI can use it even when your computers are off.
 
 This article is for Desktop Commander Remote, which you use from ChatGPT, Claude or another AI app.
@@ -18,7 +22,7 @@ This article is for Desktop Commander Remote, which you use from ChatGPT, Claude
 ## Before you start
 
 - Desktop Commander Remote is added to your AI app. See [What is Desktop Commander and how do I install it?](/getting-started/what-is-desktop-commander)
-- An Android phone or tablet with Android 7 or newer
+- An Android phone or tablet with Android 11 or newer
 
 ## What the AI can do on your phone
 
@@ -32,7 +36,7 @@ It can't change Android settings, manage your installed apps or read other apps'
 
 ## Set up Termux
 
-1. Install Termux from [F-Droid](https://f-droid.org/packages/com.termux/). There's also a [Google Play version](https://play.google.com/store/apps/details?id=com.termux) for Android 11 and newer, but Termux calls it experimental. Use one or the other, don't mix them.
+1. Install Termux from [Google Play](https://play.google.com/store/apps/details?id=com.termux).
 2. Open Termux and update its packages:
 
    ```bash
@@ -69,11 +73,11 @@ If the codes don't match, don't verify. Run the command again.
 
 ## What you should see
 
-Termux shows **Device ready**. Your phone appears in your device list at [mcp.desktopcommander.app](https://mcp.desktopcommander.app/) with the name **localhost**.
+Termux shows **Device ready**. Your phone appears in your device list at [mcp.desktopcommander.app](https://mcp.desktopcommander.app/) with the name `localhost`.
 
 Go back to ChatGPT or Claude and ask: "Use Desktop Commander Remote to show how much free space my Android phone has and what takes up the most."
 
-If your computers are online too, tell the AI to use the device called localhost.
+If your computers are online too, tell the AI to use the device called `localhost`.
 
 ## Stay online
 
