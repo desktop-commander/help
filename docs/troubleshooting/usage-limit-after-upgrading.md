@@ -27,7 +27,7 @@ If you really are on the free plan, that advice is right. If you paid for Pro, r
 
 Sign in at [mcp.desktopcommander.app](https://mcp.desktopcommander.app/) with the email you used when you upgraded, and open **Plan & billing**. It should show Pro.
 
-If none of your emails shows Pro, contact support.
+If none of your emails shows Pro, [contact support](/support/).
 
 ## 2. Check which account your AI app uses
 
@@ -37,7 +37,7 @@ Any of these shows the email in use:
 - **ChatGPT:** open Settings › Apps › Remote Desktop Commander
 - **Your computer:** the terminal running Desktop Commander shows it on the **User:** line under **Device ready**
 
-If every place shows the email with Pro and you still see the limit, contact support.
+If every place shows the email with Pro and you still see the limit, [contact support](/support/).
 
 ## 3. Move everything to the account with Pro
 
