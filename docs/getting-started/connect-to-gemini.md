@@ -25,6 +25,10 @@ Add Remote Desktop Commander to the Gemini web app as a custom connector. Then G
 
 In the Gemini sidebar, click **Customize**, open the **Connectors** tab and click **+ Custom**.
 
+![Customize in the Gemini sidebar](/images/getting-started/gemini-01-sidebar-customize.png)
+
+![Connectors tab with the + Custom button](/images/getting-started/gemini-02-connectors-custom.png)
+
 ## Step 2. Enter the server URL
 
 Paste `https://mcp.desktopcommander.app/mcp` into **MCP Server URL** and click **Next**. Leave **Additional settings** (Client ID, Client secret) empty. Desktop Commander registers Gemini by itself.
