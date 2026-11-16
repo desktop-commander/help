@@ -33,11 +33,17 @@ In the Gemini sidebar, click **Customize**, open the **Connectors** tab and clic
 
 Paste `https://mcp.desktopcommander.app/mcp` into **MCP Server URL** and click **Next**. Leave **Additional settings** (Client ID, Client secret) empty. Desktop Commander registers Gemini by itself.
 
+![Connect to an MCP server form](/images/getting-started/gemini-03-mcp-url.png)
+
 ## Step 3. Approve in Gemini
 
 Tick **I understand and accept the security and privacy risks** and click **Connect**.
 
+![Gemini consent for a custom MCP server](/images/getting-started/gemini-05-consent.png)
+
 On **Link your Google Account and [Custom] Desktopcommander account**, scroll down and click **Agree and continue**.
+
+![Link accounts screen with Agree and continue](/images/getting-started/gemini-07-link-accounts-agree.png)
 
 Finish the next steps without long breaks. Google's linking session expires after a few minutes. If you see **Session token is expired**, start again from **+ Custom**. Your computer stays connected, so the second try is quick.
 
@@ -45,12 +51,16 @@ Finish the next steps without long breaks. Google's linking session expires afte
 
 Click **Continue with Google** or **Continue with email**.
 
+![Desktop Commander sign-in](/images/getting-started/gemini-08-dc-sign-in.png)
+
 ## Step 5. Connect your computer (first time only)
 
 Skip this step if your account already has a computer connected.
 
 1. Pick your system (Windows, macOS or Linux) and click **Copy setup command**.
 2. Paste it into Terminal (macOS, Linux) or PowerShell (Windows) and press Enter. Keep that window open.
+
+![Connect this device page](/images/getting-started/gemini-09-connect-device.png)
 
 macOS:
 
@@ -72,22 +82,34 @@ npx @wonderwhy-er/desktop-commander@latest remote
 
 3. A new browser tab opens. Check that the code matches the one in your terminal, then click **Verify device**.
 
+![Verify this device](/images/getting-started/gemini-11-verify-device.png)
+
 4. You'll see **You're connected** with your computer shown as online.
+
+![You're connected](/images/getting-started/gemini-12-connected.png)
 
 ## Step 6. Allow Gemini and save the connector
 
 Go back to the first tab. Desktop Commander asks to connect [**oauth-redirect.googleusercontent.com**](http://oauth-redirect.googleusercontent.com), which is Gemini. Click **Allow**.
 
+![Desktop Commander Connect an app](/images/getting-started/gemini-13-dc-allow.png)
+
 Gemini lists the available tools. Click **Connect** to save the connector.
+
+![Save your custom app](/images/getting-started/gemini-14-save-custom-app.png)
 
 ## Step 7. Use it in a chat
 
 Start a new chat, type **@**, pick **Desktop Commander Remote Mcp** and ask your question.
 
+![Pick the connector with @](/images/getting-started/gemini-15-at-mention.png)
+
 Prompts to try first (read-only):
 
 - List my connected devices and tell me which ones are online
 - Find the 5 largest files in my Downloads folder
+
+![Gemini listing connected devices](/images/getting-started/gemini-16-test-result.png)
 
 ## Good to know
 
